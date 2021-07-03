@@ -31,10 +31,12 @@ $img-width: 45%;
     @media (min-width: 1200px) { @content; }
 }
 
+/// Transformar pixels em rem
 @function calculateRem($size) {
     @return $size / 16px * 1rem;
 }
 
+/// Aplica a função
 @mixin fontSize($size) {
     font-size: calculateRem($size);
 }
